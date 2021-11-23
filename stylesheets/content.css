@@ -1,0 +1,183 @@
+.mario {
+  width: 68px;
+  height: 68px;
+  display: block;
+  position: relative;
+  background: url('../images/mario-walk-n-jump-68.png');
+/*  background-position: -68px top;*/;
+  animation: walk .9s steps(1)  infinite;
+}
+.path{
+  width: 68px;
+  height: 68px;
+  display: block;
+  position: absolute;
+  top: 200px;
+  animation: path 3s linear infinite;
+}
+@keyframes walk {
+  0%{ background-position:   0px top;}
+  25%{ background-position:  -68px top;}
+  75%{ background-position:  -136px top;}
+  100%{ background-position:  -204px top;}
+}
+@keyframes path {
+  0%{left: -68px; top;}
+  25%{left: 30%; top: 200px;}
+  50%{left: 50%; top: 150px;}
+  55%{left: 56%; top: 200px;}
+  100%{left: 100%}
+}
+.blast {
+width: 151px;
+height: 151px;
+display: block;
+position: absolute;
+background: url('../images/blast-151.png');
+left: 50%;
+animation: blast 1s steps(1)  infinite;
+animation-play-state: paused;
+}
+.blast:hover{
+animation-play-state: running;
+}
+
+@keyframes blast {
+  0%{ background-position:   0px 0px;}
+  3%{ background-position:  -151px 0px;}
+  6%{ background-position:  -302px 0px;}
+  9%{ background-position:  -453px 0px;}
+  12%{ background-position:  -604px 0px;}
+  15%{ background-position:  -755px 0px;}
+  18%{ background-position:  -906px 0px;}
+  21%{ background-position:  -1057px 0px;}
+  24%{ background-position:  0px -151px;}
+  27%{ background-position: -151px -151px;}
+  30%{ background-position:  -302px -151px;}
+  33%{ background-position:  -453px -151px;}
+  36%{ background-position:  -604px -151px;}
+  39%{ background-position:  -755px -151px;}
+  42%{ background-position:  -906px -151px;}
+  45%{ background-position:  -1057px -151px;}
+  48%{ background-position:  0px -302px;}
+  51%{ background-position:  -151px -302px;}
+  54%{ background-position:  -302px -302px;}
+  57%{ background-position:  -453px -302px;}
+  60%{ background-position:  -604px -302px;}
+  63%{ background-position:  -755px -302px;}
+  66%{ background-position:  -906px -302px;}
+  66%{ background-position:  -1057px -302px;}
+  69%{ background-position:  0px -453px;}
+  72%{ background-position:  -151px -453px;}
+  75%{ background-position:  -302px -453px;}
+  78%{ background-position:  -453px -453px;}
+  81%{ background-position:  -604px -453px;}
+  84%{ background-position:  -755px -453px;}
+  87%{ background-position:  -906px -453px;}
+  90%{ background-position:  -1057px -453px;}
+  93%{ background-position:  0px -604px;}
+  96%{ background-position:  -151px -604px;}
+  99%{ background-position:  -302px -604px;}
+  100%{ background-position:  -453px -604px;}
+}
+.text{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 15s linear infinite;
+}
+.text:hover {
+  animation-play-state: paused;
+}
+@keyframes text {
+  from { text-indent: 100%}
+  to { text-indent: -100%}
+}
+.emoji {
+  width: 160px;
+  height: 160px;
+  display: block;
+  position: relative;
+  background: url('../images/emoji.png  ');
+/*  background-position: -68px top;*/;
+  animation: emoji 2s steps(1)  infinite;
+}
+@keyframes emoji {
+  0%{ background-position:   0px top;}
+  15%{ background-position:  -160px top;}
+  30%{ background-position:  -320px top;}
+  45%{ background-position:  -480px top;}
+  75%{ background-position:  -640px top;}
+  100%{ background-position:  -960px top;}
+}
+.emoji2 {
+    width: 160px;
+    height: 160px;
+    display: block;
+    top: 260px;
+    position: relative;
+    background: url('../images/emoji2.png  ');
+  /*  background-position: -68px top;*/;
+    animation: emoji2 2s steps(1)  infinite;
+  }
+  @keyframes emoji2 {
+    0%{ background-position:   0px top;}
+    15%{ background-position:  -160px top;}
+    30%{ background-position:  -320px top;}
+    45%{ background-position:  -480px top;}
+    75%{ background-position:  -640px top;}
+    100%{ background-position:  -960px top;}
+  }
+.emoji3 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      top: 300px;
+      position: relative;
+      background: url('../images/emoji3.png  ');
+    /*  background-position: -68px top;*/;
+      animation: emoji3 2s steps(1)  infinite;
+    }
+    @keyframes emoji3 {
+      0%{ background-position:   0px top;}
+      15%{ background-position:  -160px top;}
+      30%{ background-position:  -320px top;}
+      45%{ background-position:  -480px top;}
+      75%{ background-position:  -640px top;}
+      100%{ background-position:  -960px top;}
+    }
+.emoji4 {
+          width: 160px;
+          height: 160px;
+          display: block;
+          top: 360px;
+          position: relative;
+          background: url('../images/emoji4.png  ');
+        /*  background-position: -68px top;*/;
+          animation: emoji4 2s steps(1)  infinite;
+        }
+        @keyframes emoji4 {
+          0%{ background-position:   0px top;}
+          15%{ background-position:  -160px top;}
+          30%{ background-position:  -320px top;}
+          45%{ background-position:  -480px top;}
+          75%{ background-position:  -640px top;}
+          100%{ background-position:  -960px top;}
+        }
+.emoji5 {
+                  width: 160px;
+                  height: 160px;
+                  display: block;
+                  top: 400px;
+                  position: relative;
+                  background: url('../images/emoji5.png  ');
+                /*  background-position: -68px top;*/;
+                  animation: emoji5 2s steps(1)  infinite;
+                }
+                @keyframes emoji5 {
+                  0%{ background-position:   0px top;}
+                  15%{ background-position:  -160px top;}
+                  30%{ background-position:  -320px top;}
+                  45%{ background-position:  -480px top;}
+                  75%{ background-position:  -640px top;}
+                  100%{ background-position:  -960px top;}
+                }
